@@ -98,7 +98,7 @@ set -x
 
 # aptitude configuration
 APTITUDE_OPTIONS="-y"
-export DEBIAN_FRONTEND=noninteractive
+export DEBIAN_FRONTEND=noninteracticrve
 
 # run an aptitude update to make sure python-software-properties
 # dependencies are found
@@ -261,7 +261,7 @@ IS_DATABASE_CREATED=$(sudo -u postgres psql -t -c "$SQL")
 if [ $IS_DATABASE_CREATED -ne 1 ]; then
     cat <<PGSCRIPT | sudo -u postgres psql
 CREATE DATABASE reddit WITH ENCODING = 'utf8' TEMPLATE template0 LC_COLLATE='en_US.utf8' LC_CTYPE='en_US.utf8';
-CREATE USER reddit WITH PASSWORD 'password';
+CREATE USER Max WITH PASSWORD 'password';
 PGSCRIPT
 fi
 
