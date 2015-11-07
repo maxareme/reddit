@@ -54,12 +54,12 @@ REDDIT_USER=${REDDIT_USER:-$SUDO_USER}
 REDDIT_GROUP=${REDDIT_GROUP:-nogroup}
 
 # the root directory to base the install in. must exist already
-REDDIT_HOME=${REDDIT_HOME:-/home/$REDDIT_USER}
+REDDIT_HOME=${REDDIT_HOME:-/var/www/html/reddit.maax.me}
 
 # the domain that you will connect to your reddit install with.
 # MUST contain a . in it somewhere as browsers won't do cookies for dotless
 # domains. an IP address will suffice if nothing else is available.
-REDDIT_DOMAIN=${REDDIT_DOMAIN:-reddit.local}
+REDDIT_DOMAIN=${REDDIT_DOMAIN:-reddit.maax.me}
 
 #The plugins to clone and register in the ini file
 REDDIT_PLUGINS=${REDDIT_PLUGINS:-meatspace about liveupdate}
